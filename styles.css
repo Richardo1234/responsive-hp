@@ -1,0 +1,446 @@
+@import url(./style.css);
+/* Navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* selesai */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(24, 26, 28, 1);
+  padding: 6px 20px;
+  color: white;
+  width: 360px;
+  height: 56px;
+  gap: 12px;
+  top: 92px;
+}
+/* selesai */
+/* Kiri */
+.nav-left a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  height: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  font-style: normal;
+  font-weight: 500;
+}
+/* selesai */
+.logo img {
+  height: 18px;
+  width: 20px;
+  vertical-align: middle;
+}
+/* selesai */
+/* Kanan */
+.profile-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* selesai */
+.profile-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 4px;
+}
+/* selesai */
+.profile-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+/* selesai */
+.arrow {
+  color: white;
+  margin-left: 4px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+/* H selesai */
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: rgba(24, 26, 28, 1);
+  display: none;
+  flex-direction: column;
+  /* min-width: 150px; */
+  width: 113px;
+  height: 104px;
+  z-index: 100;
+  border-radius: 4px;
+  padding: 4px 0;
+}
+
+.arrow {
+  color: white;
+  width: 20px;
+  height: 16px;
+}
+
+.white-star {
+  color: white;
+  /* width: 16px;
+  height: 16px; */
+  font-size: 16px; /* perbesar ukuran bintangnya */
+  line-height: 1; /* atau sesuai kebutuhan */
+}
+.logout-icon {
+  color: white;
+  width: 16px;
+  height: 16px; /* atau sesuai kebutuhan */
+}
+/* .logout-icon img {
+  width: 16px;
+  height: 16px;
+} */
+
+/* selesai */
+.dropdown a {
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: flex; /* ganti dari block ke flex */
+  align-items: center; /* untuk sejajar vertikal */
+  gap: 5px; /* jarak antara icon dan teks */
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.logout-icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.dropdown a:hover {
+  background-color: #333;
+}
+
+/* Tampilkan dropdown jika checkbox dicentang */
+#dropdown-toggle:checked + .dropdown {
+  display: flex;
+}
+/* .arrow {
+  font-size: 14px;
+  width: 16px;
+  height: 16px;
+  color: white;
+  transform: rotate(90deg); putar panah › jadi ke bawah
+  display: inline-block;
+} */
+
+/* hero section */
+.hero {
+  position: relative;
+  width: 360px;
+  height: 225px;
+  background-image: url("Untuk Beranda/gambar latihan militer di header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* semi-transparan agar teks jelas */
+.overlay {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-content {
+  width: 320px;
+  height: 118px;
+  gap: 12px;
+  margin-left: 22px;
+  margin-right: 18px;
+  margin-top: 67px;
+  margin-bottom: 40px;
+}
+/* selesai */
+.hero-content h1 {
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: white;
+}
+/* selesai */
+.hero-content p {
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-style: normal;
+  color: white;
+}
+
+/* Tombol (rancu) */
+
+/* .hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.start-btn {
+  padding: 4px 12px;
+  background-color: rgba(15, 30, 147, 1);
+  color: white;
+  border: none;
+  border-radius: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 55px;
+  height: 25px;
+}
+
+.info-btn {
+  width: 120px;
+  height: 25px;
+  color: white;
+  font-size: 12px;
+
+  cursor: pointer;
+  background-color: rgba(34, 40, 42, 1);
+  padding: 4px 12px;
+  gap: 8px;
+  border-radius: 48px;
+}
+.volume {
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+} */
+/* .info-btn img {
+ top: 200;
+} */
+/* .age-limit {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px;
+  color: rgba(193, 194, 196, 1);
+  border-radius: 24px;
+  border: 1px solid rgba(193, 194, 196, 1);
+  width: 30px;
+  height: 25px;
+} */
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Tombol Mulai */
+.start-btn {
+  padding: 4px 12px;
+  background-color: rgba(15, 30, 147, 1);
+  color: white;
+  border: none;
+  border-radius: 48px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  width: 55px;
+  height: 25px;
+}
+
+/* Info: Icon + Text */
+.info-btn {
+  display: flex;
+  align-items: center;
+  background-color: #22282a;
+  color: white;
+  font-size: 12px;
+  border-radius: 48px;
+  padding: 4px 12px;
+  gap: 6px;
+  height: 25px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.info-btn img {
+  width: 12px;
+  height: 12px;
+}
+
+/* Label 18+ */
+.age-limit {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: rgba(193, 194, 196, 1);
+  border: 1px solid rgba(193, 194, 196, 1);
+  border-radius: 24px;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+}
+
+/* Icon Volume */
+.volume {
+  width: 24px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* UTAMA melanjutkan tonton */
+/* ini coba-coba */
+body {
+  background-color: rgba(24, 26, 28, 1);
+  color: white;
+}
+
+.continue-watching h2 {
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/* Slider Container (Lanjutkan Tonton) */
+.slider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track gambar */
+.slide-track {
+  display: flex;
+  gap: 16px;
+  /* width: auto; -> tidak perlu fixed width */
+}
+
+/* Gambar kartu */
+.slide {
+  position: relative;
+  width: 309px;
+  height: 151px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Info Teks di atas gambar */
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  box-sizing: border-box;
+  /* border-radius: 8px; */
+}
+
+/* UTAMA top rating */
+/* ini coba-coba */
+/* body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+} */
+
+.top-rating-section {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+
+/* Container luar slider */
+/* Top Rating Slider Container */
+.rating-slider-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 10px;
+}
+
+.rating-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track isi */
+.rating-slider-track {
+  display: flex;
+  gap: 16px;
+}
+
+.rating-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 95px;
+  height: 145px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rating-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* border-radius: 10px; */
+}
+
+/* Animasi jalan terus */
